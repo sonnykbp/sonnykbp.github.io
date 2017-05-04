@@ -1,0 +1,217 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #708090;
+  background-color: #F5F5F5;
+  margin: 0;
+}
+
+main {
+  margin: 50px 100px;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  color: black;
+
+}
+h1 {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  margin: 0;
+
+}
+
+.dash {
+  letter-spacing: normal;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #708090;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #F5F5F5;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+nav ul{
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #708090;
+}
+nav li{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 5px;
+}
+
+.slider {
+  background-color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 150px;
+  /*border: 30px solid white;*/
+}
+
+.caption {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px;
+  color: grey;
+  letter-spacing: 3px;
+  /*background-color: white;*/
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 16px;
+
+}
+
+p {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  margin-left: 65px;
+}
+
+section {
+  margin: 50px 0;
+
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 450px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: grey;
+
+}
+
+.work-order {
+  font-size: 14px;
+  font-weight: 300;
+  color: grey;
+  margin: 50px;
+  border-bottom: 1px solid grey;
+}
+
+h3 {
+  font-family: 'Arvo', serif;
+  margin: 100px 50px;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  color: grey;
+  transition: all 0.5s ease;
+}
+
+h3:hover {
+  padding-left: 20px;
+}
+
+
+.brand {
+  background-color: white;
+  width: 33%;
+  transition: all 0.5s ease;
+}
+
+.ux-ui {
+  background-color: white;
+  width: 33%;
+  border-left: 3px solid #F5F5F5;
+  border-right: 3px solid #F5F5F5;
+  transition: all 0.5s ease;
+}
+
+.motion {
+  background-color: white;
+  width: 33%;
+  transition: all 0.5s ease;
+}
+
+.brand:hover, .ux-ui:hover, .motion:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.contact {
+  margin-bottom: 100px;
+}
+
+.links {
+  display: flex;
+  margin-left: 65px;
+}
+
+h4 {
+  font-weight: 300;
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+}
+.online-profile ul, .resume-links ul{
+  list-style-type: square;
+  padding: 0px 20px;
+
+}
+
+.online-profile li, .resume-links li {
+  line-height: 2;
+  font-weight: 700;
+}
+
+.online-profile a, .resume-links a {
+  transition: all 0.5s ease;
+}
+.online-profile a:hover, .resume-links a:hover {
+  color: black;
+}
+
+.online-profile, .resume-links {
+  width: 250px;
+  margin-right: 50px;
+}
+
+.email {
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.email:hover {
+  color: #708090;
+}
+
+footer p{
+  font-size: 12px;
+  letter-spacing: normal;
+  text-align: center;
+  border-top: 5px solid white;
+  font-weight: 300;
+  padding-top: 40px;
+
+}
