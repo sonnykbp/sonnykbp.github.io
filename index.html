@@ -3,23 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonny Keobounphanh Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Sonny Keobounphanh Portfolio</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <main>
-  <header>
+  <header class="navbar-fixed-top">
 
     <h1><span class="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> SONNY KEOBOUNPHANH</h1>
 
 
     <nav>
       <ul>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">WORK</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" id="about-nav">ABOUT</a></li>
+        <li><a href="#work" id="work-nav">WORK</a></li>
+        <li><a href="#contact" id="contact-nav">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -29,35 +37,36 @@
   </div>
 
 
-    <section class="about">
+    <section class="about" id="about">
+
       <h2><span class="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> ABOUT</h2>
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique erat pretium, lobortis erat at, condimentum nibh. Morbi luctus scelerisque nibh eu eleifend. Ut nisl metus, viverra a risus vel, ultrices tristique ex. Quisque nec sagittis velit consectetur adipiscing elit.</p>
+      <p>I am a creative, solution-seeking problem solver who enjoys design and functionality. Inquisitive by nature, I have a thirst to craft striking design aesthetics and construct solid code. With my imaginative visual sense and practical logic, I pave the path to success for myself and others.</p>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="brand">
         <p class="work-order">01</p>
 
-        <h3><a href="#">BRAND</a></h3>
+        <h3><a href="#">GRAPHIC DESIGN</a></h3>
       </div>
 
       <div class="ux-ui">
         <p class="work-order">02</p>
-        <h3><a href="#">UX / UI</a></h3>
+        <h3><a href="#">WEB APPLICATION</a></h3>
       </div>
 
       <div class="motion">
         <p class="work-order">03</p>
-        <h3><a href="#">MOTION</a></h3>
+        <h3><a href="#">MOTION GRAPHICS</a></h3>
       </div>
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2><span class="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> CONTACT</h2>
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique erat pretium, lobortis erat at, condimentum nibh. Morbi luctus scelerisque nibh eu eleifend. Ut nisl metus, viverra a risus vel, ultrices tristique ex. Quisque nec sagittis velit consectetur <a class="email" href="#">say hello.</a></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique erat pretium, lobortis erat at, condimentum nibh. Morbi luctus scelerisque nibh eu eleifend. Ut nisl metus, viverra a risus vel, ultrices tristique ex. Quisque nec sagittis velit consectetur <a class="email" href="mailto:skeobounphanh@gmail.com?Subject=Hello" target="_top">say hello.</a></p>
 
       <section class="links">
         <div class="online-profile">
