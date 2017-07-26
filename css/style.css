@@ -15,12 +15,12 @@ main {
 .navbar-fixed-top {
   display: flex;
   justify-content: space-between;
-  padding: 40px 100px;
-  /*margin-bottom: 50px;*/
+  padding: 40px 100px 60px 100px;
   color: black;
   height: 80px;
-  /*background-color: white;*/
+  background-color: #F5F5F5;
   text-decoration: none;
+  /*border-bottom: 1px solid grey;*/
 }
 
 .navbar-fixed-top a {
@@ -235,6 +235,63 @@ footer p{
 
 }
 
+h5 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project-img {
+  margin: 20px;
+}
+
+.project-description{
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  width: 350px;
+}
+
 .project-img img{
   width: 500px;
+}
+
+.project-description p{
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.project-description p em{
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.project-description a{
+  margin-right: 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: black;
+  border: 1px solid black;
+  transition: all 1s ease;
 }
