@@ -145,6 +145,22 @@ h3 {
   transition: all 0.5s ease;
 }
 
+.skills {
+  width: 100%;
+
+}
+
+.skills-wrapper {
+  display: flex;
+}
+
+.skills ul{
+  list-style-type: square;
+  padding: 0px 20px;
+  line-height: 2;
+  font-weight: 700;
+}
+
 .work a {
   text-decoration: none;
 }
