@@ -148,13 +148,16 @@ h3 {
 
 .skills {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 65px;
 
 }
 
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .skills ul{
@@ -203,6 +206,7 @@ h3:hover {
 
 .links {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 65px;
 }
 
@@ -315,6 +319,10 @@ h5 {
   transition: all 1s ease;
 }
 
+.name-mobile {
+  display: none;
+}
+
 /*MOBILE STYLE*/
 
 @media only screen and (max-width: 700px) {
@@ -323,13 +331,38 @@ h5 {
     margin: 0;
   }
 
+  p {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navbar-fixed-top h1{
+    display: none;
+  }
+
   .navbar-fixed-top {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     height: 140px;
   }
 
+
+
+  h1.name-mobile {
+    display: block;
+    font-weight: 200;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+
   .nav_bar {
-    margin: 20px 18px;
+    margin: 20px;
+  }
+
+  nav ul {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   main {
@@ -337,9 +370,44 @@ h5 {
   }
 
   .slider {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    display: none;
+
+  }
+
+  .about {
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .skills-section{
+    margin-top: 100px;
+  }
+
+  .skills-section h2 {
+    text-align: center;
+  }
+
+  .work{
+    flex-wrap: wrap;
+    text-align: center;
+    border: none;
+  }
+
+  .contact-description {
+    text-align: center;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+    margin-left: 0;
+    /*justify-content: center;*/
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
