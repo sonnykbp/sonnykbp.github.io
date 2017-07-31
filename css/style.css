@@ -113,15 +113,16 @@ p {
 }
 
 section {
-  margin: 50px 0;
+  margin: 50px 0px;
 
 }
 
 .work {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  height: 450px;
+  width: auto;
+  /*flex-wrap: wrap;*/
+  height: auto;
   margin-top: 150px;
   margin-bottom: 150px;
   color: grey;
@@ -174,13 +175,13 @@ h3:hover {
 
 .brand {
   background-color: white;
-  width: 33%;
+  width: 400px;
   transition: all 0.5s ease;
 }
 
 .ux-ui {
   background-color: white;
-  width: 33%;
+  width: 400px;
   border-left: 3px solid #F5F5F5;
   border-right: 3px solid #F5F5F5;
   transition: all 0.5s ease;
@@ -188,7 +189,7 @@ h3:hover {
 
 .motion {
   background-color: white;
-  width: 33%;
+  width: 400px;
   transition: all 0.5s ease;
 }
 
@@ -316,7 +317,11 @@ h5 {
 
 /*MOBILE STYLE*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
+
+  html {
+    margin: 0;
+  }
 
   .navbar-fixed-top {
     flex-wrap: wrap;
@@ -325,6 +330,16 @@ h5 {
 
   .nav_bar {
     margin: 20px 18px;
+  }
+
+  main {
+    margin: 0px 0px;
+  }
+
+  .slider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
 }

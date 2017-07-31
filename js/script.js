@@ -1,11 +1,5 @@
 
 $(document).ready(function() {
-  $('#hamburger_nav').hide();
-
-  $('#hamburger').click(function(event) {
-    event.preventDefault();
-    $('#hamburger_nav').slideToggle();
-  });
 
   $("#home-nav").click(function() {
     $('body').animate({scrollTop: $("#home").offset().top - 120}, "slow");
