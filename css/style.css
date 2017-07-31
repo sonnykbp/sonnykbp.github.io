@@ -24,7 +24,7 @@ main {
 }
 
 .navbar-fixed-top a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
@@ -312,4 +312,19 @@ h5 {
   color: black;
   border: 1px solid black;
   transition: all 1s ease;
+}
+
+/*MOBILE STYLE*/
+
+@media only screen and (max-width: 768px) {
+
+  .navbar-fixed-top {
+    flex-wrap: wrap;
+    height: 140px;
+  }
+
+  .nav_bar {
+    margin: 20px 18px;
+  }
+
 }
