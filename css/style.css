@@ -184,7 +184,7 @@ h3:hover {
 
 .ux-ui {
   background-color: white;
-  width: 400px;
+  width: 380px;
   border-left: 3px solid #F5F5F5;
   border-right: 3px solid #F5F5F5;
   transition: all 0.5s ease;
@@ -439,13 +439,17 @@ h5 {
 
   .project-img img{
     width: 90%;
-    margin-left: 15px;
+    margin-left: 10px;
   }
 
   .project-description {
-    margin-left: 30px;
-    margin-left: 30px;
+    padding-left: 15px;
+    padding-left: 15px;
   }
 
+  .sections h2{
+    margin-top: 200px;
+    text-align: center;
+  }
 
 }
