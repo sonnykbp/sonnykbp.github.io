@@ -328,6 +328,7 @@ h5 {
   width: 100%;
   text-align: center;
   padding: 30px 0px 25px 0px;
+  margin-top: 120px;
 }
 
 .breadcrumbs li{
@@ -470,8 +471,11 @@ h5 {
   }
 
   .sections h2{
-    margin-top: 200px;
     text-align: center;
+  }
+
+  .breadcrumbs {
+    margin-top: 200px;
   }
 
 }
