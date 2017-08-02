@@ -476,6 +476,11 @@ h5 {
 
   .breadcrumbs {
     margin-top: 200px;
+    font-size: 12px;
   }
 
+  .breadcrumbs ul{
+    padding: 0;
+    margin: 0;
+  }
 }
