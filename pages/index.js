@@ -15,7 +15,6 @@ const HomePage = () => {
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </Head>
   <main>
@@ -163,7 +162,7 @@ const HomePage = () => {
     <div className="brand">
       <p className="work-order">01</p>
 
-      <h3><a href="pages/design.html">WEB<br/> DESIGN</a></h3>
+      <h3><Link href="/design"><a>WEB<br/> DESIGN</a></Link></h3>
     </div>
 
     <div className="ux-ui">
@@ -219,7 +218,7 @@ const HomePage = () => {
       <div className="resume-links">
         <h4>RESUME</h4>
         <ul>
-          <li><a href="https://drive.google.com/file/d/0B7vZFk2sVpVyTllUblRwV2lwblk/view?usp=sharing" target="_blank">RESUME</a></li>
+          <li><a href="https://drive.google.com/file/d/1jEBa-MrGu_tj1NoTdz09OG8WJMGvFW41/view?usp=sharing" target="_blank">RESUME</a></li>
         </ul>
       </div>
     </section>
