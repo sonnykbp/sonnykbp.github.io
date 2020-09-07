@@ -1,9 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useRouter } from 'next/router'
+import { useRef, createRef } from 'react'
 
 
-const HomePage = () => {
+const HomePage = ({href}) => {
+  const router = useRouter()
+  const url = router.pathname
+  const myRef = useRef([])
+  const scrollToSection = ({target}) => {
+    const {name} = target
+    const location = myRef.current[name]
+    window.scrollTo({
+      top: location.offsetTop - 100,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 	return <>
   <Head>
   <title>Sonny Keobounphanh Portfolio</title>
@@ -29,9 +42,14 @@ const HomePage = () => {
       <nav>
         <div className="nav_bar">
           <ul>
-            <li><Link href="#about" id="about-nav">ABOUT</Link></li>
-            <li><a href="#work" id="work-nav">WORK</a></li>
-            <li><a href="#contact" id="contact-nav">CONTACT</a></li>
+            <li><a id="about-nav" name="0" onClick={scrollToSection}>ABOUT</a></li>
+            <li><a name="1" id="work-nav" onClick={scrollToSection}>WORK</a></li>
+            <li><a name="2" id="contact-nav" onClick={scrollToSection}>CONTACT</a></li>
+          <style jsx>{`
+            a {
+              cursor: pointer;
+            }
+          `}</style>
           </ul>
         </div>
       </nav>
@@ -44,7 +62,7 @@ const HomePage = () => {
     </div>
 
 
-    <section className="about" id="about">
+    <section className="about" id="about" ref={(ref) => myRef.current[0] = ref}>
 
       <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> ABOUT</h2>
       <br/>
@@ -159,7 +177,7 @@ const HomePage = () => {
 
 
 
-  <section className="work" id="work">
+  <section className="work" id="work" ref={(ref) => myRef.current[1] = ref}>
     <div className="brand">
       <p className="work-order">01</p>
 
@@ -178,7 +196,7 @@ const HomePage = () => {
 
   </section>
 
-  <section className="contact" id="contact">
+  <section className="contact" id="contact" ref={(ref) => myRef.current[2] = ref}>
     <div className="contact-description">
       <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> CONTACT</h2>
       <br/>

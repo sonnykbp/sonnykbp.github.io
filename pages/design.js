@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Header from '../components/header'
 
 const DesignProjects = [
     {
@@ -54,7 +55,8 @@ const DesignProjects = [
 ]
 const DesignPage = () => {
     return (
-        <>
+    <>
+    <Header />
     <section className="breadcrumbs">
       <ul>
         <li><Link href="/design"><a>Web Design</a></Link>  &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
