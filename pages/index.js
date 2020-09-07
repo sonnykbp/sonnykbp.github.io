@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRef } from 'react'
 
 
 const HomePage = () => {
@@ -28,7 +29,7 @@ const HomePage = () => {
       <nav>
         <div className="nav_bar">
           <ul>
-            <li><a href="#about" id="about-nav">ABOUT</a></li>
+            <li><Link href="#about" id="about-nav">ABOUT</Link></li>
             <li><a href="#work" id="work-nav">WORK</a></li>
             <li><a href="#contact" id="contact-nav">CONTACT</a></li>
           </ul>
