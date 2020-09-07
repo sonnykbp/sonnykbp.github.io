@@ -48,9 +48,7 @@ const HomePage = () => {
 
       <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> ABOUT</h2>
       <br/>
-      <p>I am a creative, solution-seeking full stack <em>software engineer</em> who enjoys <em>design and functionality</em>. Inquisitive by nature, I have a thirst to craft striking design aesthetics and construct solid code. With my imaginative visual sense and practical logic, I pave the path to success for myself and others.</p>
-      <br/>
-      <p>I'm also a huge foodie and a proud dog mom to a chirpy pomeranian.</p>
+      <p>I am a creative, solution-seeking full stack <em>software engineer</em> who enjoys <em>design and functionality</em>. Inquisitive by nature, I have a thirst to craft striking design aesthetics and construct <em>solid code</em>. With my imaginative visual sense and practical logic, I pave the path to <em>success for myself and others.</em></p>
       <style jsx>{`
       em {
         color: black;
@@ -69,24 +67,23 @@ const HomePage = () => {
 
           <h4>FRONTEND</h4>
           <ul>
-            <li>Javascript</li>
+            <li>Javascript (ES6+)</li>
             <li>jQuery</li>
-            <li>Angular JS</li>
-            <li>React JS</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>SASS</li>
-            <li>BOOTSTRAP</li>
+            <li>Angular 2+</li>
+            <li>React 16+ (Hooks)</li>
+            <li>Redux (Redux Toolkit)</li>
+            <li>CSS Preprocessors</li>
+            <li>Sass/SASS</li>
+            
           </ul>
         </div>
 
         <div className="online-profile">
           <h4>BACKEND</h4>
           <ul>
-            <li>Ruby on Rails</li>
-            <li>Node JS</li>
-            <li>Express JS</li>
-            <li>Sinatra</li>
+            <li>Ruby on Rails 5</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
             <li>ActiveRecord</li>
             <li>Mongoose</li>
           </ul>
@@ -102,16 +99,6 @@ const HomePage = () => {
         </div>
 
         <div className="online-profile">
-          <h4>MISCELLANEOUS</h4>
-          <ul>
-            <li>WordPress</li>
-            <li>CLI</li>
-            <li>Git</li>
-            <li>Github</li>
-          </ul>
-        </div>
-
-        <div className="online-profile">
           <h4>SOFTWARE</h4>
           <ul>
             <li>Photoshop</li>
@@ -123,9 +110,51 @@ const HomePage = () => {
           </ul>
         </div>
 
+        <div className="online-profile">
+          <h4>OTHER</h4>
+          <ul>
+            <li>.NET/ASP.NET</li>
+            <li>Jenkins</li>
+            <li>Agile/Kanban</li>
+            <li>WordPress</li>
+            <li>Git/GitLab</li>
+            <li>Jest</li>
+            <li>React Testing Library</li>
+            <li>Webpack</li>
+          </ul>
+        </div>
+
+
+
 
       </div>
     </section>
+
+     <section className="skills-section">
+      <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> STRENGTHS</h2>
+      <br/>
+      <div className="links">
+          <div className="strengths">
+          <ul>
+            <li>Team Player</li>
+            <li>Reliable</li>
+            <li>Humble</li>
+            <li>Ambitious</li>
+            <li>Radiant</li>
+            <li>Powerhouse</li>
+            <li>Genuine</li>
+            <li>Empathetic</li>
+            <li>Passionate</li>
+            <li>Resourceful</li>
+            <li>Flexible</li>
+            <li>Expressive</li>
+            <li>Dedicated</li>
+            <li>Multicultural</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
 
 
 
