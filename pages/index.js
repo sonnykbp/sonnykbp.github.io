@@ -1,10 +1,29 @@
+import Head from 'next/head'
+import Link from 'next/link'
+
+
 const HomePage = () => {
-	return <div>  <main>
+	return <>
+  <Head>
+  <title>Sonny Keobounphanh Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </Head>
+  <main>
     <header className="navbar-fixed-top">
 
-      <h1><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span><a href="#" id="home-nav">SONNY KEOBOUNPHANH</a></h1>
+      <h1><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span><Link href="/"><a id="home-nav">SONNY KEOBOUNPHANH</a></Link></h1>
 
-      <h1 className="name-mobile"><a href="#" id="home-nav">SONNY KEOBOUNPHANH</a></h1>
+      <h1 className="name-mobile"><Link href="/"><a id="home-nav">SONNY KEOBOUNPHANH</a></Link></h1>
 
 
       <nav>
@@ -21,7 +40,7 @@ const HomePage = () => {
 
 
     <div className="slider">
-      <h3 className="caption"><a href="#">&#60;&nbspDESIGN /&#62;</a></h3>
+      <h3 className="caption"><a href="#">&#60;&nbsp;DESIGN /&#62;</a></h3>
     </div>
 
 
@@ -29,13 +48,13 @@ const HomePage = () => {
 
       <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> ABOUT</h2>
       <br/>
-      <p>I am a creative, solution-seeking <em>full stack web developer</em> who enjoys design and functionality. Inquisitive by nature, I have a thirst to craft striking design aesthetics and construct solid code. With my imaginative visual sense and practical logic, I pave the path to success for myself and others.</p>
+      <p>I am a creative, solution-seeking full stack <em>software engineer</em> who enjoys <em>design and functionality</em>. Inquisitive by nature, I have a thirst to craft striking design aesthetics and construct solid code. With my imaginative visual sense and practical logic, I pave the path to success for myself and others.</p>
       <br/>
       <p>I'm also a huge foodie and a proud dog mom to a chirpy pomeranian.</p>
       <style jsx>{`
       em {
-        color: 'black';
-        font-style: 'normal';
+        color: black;
+        font-style: normal;
       }
     `}</style>
     </section>
@@ -179,9 +198,10 @@ const HomePage = () => {
   </section>
 
   <footer>
-    <p>Sonny Keobounphanh Copyright 2017.</p>
+    <p>Sonny Keobounphanh &#169; {new Date().getFullYear()}.</p>
   </footer>
-</main></div>
+</main>
+</>
 }
 
 export default HomePage
