@@ -1,5 +1,57 @@
 import Link from 'next/link'
 
+const DesignProjects = [
+    {
+        'title': 'CAFE NATILEE', 
+        'description': 'An upscale cafe that offers healthy, delicious cuisine.', 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR',
+        'img': '/cafe-natilee.png',
+        'link': 'http://cafenatilee.com/',
+    },
+    {
+        'title': 'ECLERX DIGITAL', 
+        'description': 'A full service digital agency for global brands.', 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/eclerx-digital.png',
+        'link': 'https://www.eclerxdigital.com/',
+    },
+    {
+        'title':'GREATER WASHINGTON ENDODONTICS', 
+        'description': "The DMV area's premium specialty practice for dental treatment.", 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/greater-washington-endodontics.png',
+        'link': 'http://www.va-rootcanal.com/',
+    }, 
+    {
+        'title': 'LUCEQUE', 
+        'description': 'A global business matchmaking and strategies providing service.', 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/luceque-global.png',
+        'link': 'http://www.luceque.com/',
+    },
+    {
+        'title':'SNUCMAA', 
+        'description': "Seoul National University College of Medicine Alumni Association forum website.", 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/snucmaaus.png',
+        'link': 'http://snucmaaus.org/',
+    },
+    {
+        'title': 'TELESIS', 
+        'description': 'A corporation that plans, builds and finances urban communities.', 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/telesis-corp.png',
+        'link': 'http://www.telesiscorp.com/',
+    },
+    {
+        'title':'WET N WAVY', 
+        'description': 'A provider for hair care products for human and synthetic hair.', 
+        'tools': 'PHOTOSHOP, ILLUSTRATOR, WORDPRESS',
+        'img': '/wet-n-wavy.png',
+        'link': 'http://www.wetnwavy.com/',
+    },            
+    
+]
 const DesignPage = () => {
     return (
         <>
@@ -14,125 +66,28 @@ const DesignPage = () => {
     <section className="sections">
       <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> WEB DESIGN</h2>
       <hr/>
+        {DesignProjects.map(({title, description, tools, img, link}) => {
+            return (
+            <div 
+                key={Math.random()}
+                className="wrapper">
+                <div className="project-img">
+                <img src={img} alt={title} />
+                </div>
 
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/cafe-natilee.png" alt="cafe natilee" />
-        </div>
-
-        <div className="project-description">
-          <h5>CAFE NATILEE</h5>
-          <p>An upscale cafe that offers healthy, delicious cuisine.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR)</em></p>
-          <br/>
-          <div>
-            <a href="http://cafenatilee.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/eclerx-digital.png" alt="eclerx digital" />
-        </div>
-
-        <div className="project-description">
-          <h5>ECLERX DIGITAL</h5>
-          <p>A full service digital agency for global brands.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="https://www.eclerxdigital.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/greater-washington-endodontics.png" alt="greater washington endodontics" />
-        </div>
-
-        <div className="project-description">
-          <h5>GREATER WASHINGTON ENDODONTICS</h5>
-          <p>The DMV area's premium specialty practice for dental treatment.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="http://www.va-rootcanal.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/luceque-global.png"  alt="luceque-global" />
-        </div>
-
-        <div className="project-description">
-          <h5>LUCEQUE</h5>
-          <p>A global business matchmaking and strategies providing service.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="http://www.luceque.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="../img/Design/snucmaaus.png"/>
-        </div>
-
-        <div className="project-description">
-          <h5>SNUCMAA</h5>
-          <p>Seoul National University College of Medicine Alumni Association forum website.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="http://snucmaaus.org/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/telesis-corp.png"  alt="telesis" />
-        </div>
-
-        <div className="project-description">
-          <h5>TELESIS</h5>
-          <p>A corporation that plans, builds and finances urban communities.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="http://www.telesiscorp.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
-
-      <div className="wrapper">
-        <div className="project-img">
-          <img src="/wet-n-wavy.png"  alt="wet-n-wavy" />
-        </div>
-
-        <div className="project-description">
-          <h5>WET N WAVY</h5>
-          <p>A provider for hair care products for human and synthetic hair.</p>
-          <br/>
-          <p><em>(PHOTOSHOP, ILLUSTRATOR, WORDPRESS)</em></p>
-          <br/>
-          <div>
-            <a href="http://www.wetnwavy.com/" target="_blank">Visit Site</a>
-          </div>
-        </div>
-      </div>
+                <div className="project-description">
+                <h5>{title}</h5>
+                <p>{description}</p>
+                <br/>
+                <p><em>({tools})</em></p>
+                <br/>
+                <div>
+                    <a href={link} target="_blank">Visit Site</a>
+                </div>
+                </div>
+            </div>
+            )        
+        })}
 
     </section>
     <style jsx>{`
