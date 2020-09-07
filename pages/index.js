@@ -10,12 +10,12 @@ const HomePage = () => {
   <link rel="icon" href="favicon.ico" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous"/>
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossOrigin="anonymous"></script>
   </Head>
   <main>
     <header className="navbar-fixed-top">
@@ -167,12 +167,12 @@ const HomePage = () => {
 
     <div className="ux-ui">
       <p className="work-order">02</p>
-      <h3><a href="pages/web-app.html">WEB<br/> APPLICATION</a></h3>
+      <h3><Link href="/web-app"><a>WEB<br/> APPLICATION</a></Link></h3>
     </div>
 
     <div className="motion">
       <p className="work-order">03</p>
-      <h3><a href="pages/motion.html">MOTION<br/> GRAPHICS</a></h3>
+      <h3><Link href="/motion"><a>MOTION<br/> GRAPHICS</a></Link></h3>
     </div>
 
   </section>
