@@ -221,7 +221,7 @@ const HomePage = ({href}) => {
       <div className="online-profile">
         <h4>PROFILES</h4>
         <ul>
-          <li><a href="http://www.sonnykeobounphanh.com/" target="_blank">ILLUSTRATION SITE</a></li>
+          <li><a href="https://ksounthisay.wixsite.com/sonnykeobounphanh" target="_blank">ILLUSTRATION SITE</a></li>
         </ul>
       </div>
     </section>
