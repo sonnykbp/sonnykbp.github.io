@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import ProjectLayout from '../components/project-layout'
 
 const MotionProjects = [
     {
@@ -19,48 +19,7 @@ const MotionProjects = [
 ]
 const MotionPage = () => {
     return (
-        <>
-    <section className="breadcrumbs">
-      <ul>
-        <li><Link href="/design"><a>Web Design</a></Link>  &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
-        <li><Link href="/web-app"><a>Web Application</a></Link>    &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
-        <li><Link href="/motion"><a>Motion Graphics</a></Link> </li>
-      </ul>
-    </section>
-
-    <section className="sections">
-      <h2><span className="dash">&mdash;&mdash;&mdash;&mdash;&mdash;</span> MOTION GRAPHICS</h2>
-      <hr/>
-        {MotionProjects.map(({title, description, tools, img, link}) => {
-            return (
-            <div 
-                key={Math.random()}
-                className="wrapper">
-                <div className="project-img">
-                <img src={img} alt={title} />
-                </div>
-
-                <div className="project-description">
-                <h5>{title}</h5>
-                <p>{description}</p>
-                <br/>
-                <p><em>({tools})</em></p>
-                <br/>
-                <div>
-                    <a href={link} target="_blank">Watch Video</a>
-                </div>
-                </div>
-            </div>
-            )        
-        })}
-
-    </section>
-    <style jsx>{`
-      .project-description div {
-        margin-top: 30px;
-      }
-    `}</style>
-    </>
+    <ProjectLayout workType={'MOTION GRAPHICS'} projectData={MotionProjects} />
     )
 }
 
