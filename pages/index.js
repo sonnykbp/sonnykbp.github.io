@@ -196,7 +196,7 @@ const HomePage = ({href}) => {
     </div>
 
     <section className="links">
-      <div className="online-profile">
+      <div className="resume-links">
         <h4>CONTACT</h4>
         <ul>
           <li><a href="mailto:skeobounphanh@gmail.com?Subject=Hello" target="_top">SKEOBOUNPHANH@GMAIL.COM</a>
@@ -217,7 +217,7 @@ const HomePage = ({href}) => {
         </ul>
       </div>
 
-      <div className="online-profile">
+      <div className="resume-links">
         <h4>PROFILES</h4>
         <ul>
           <li><a href="https://ksounthisay.wixsite.com/sonnykeobounphanh" target="_blank">ILLUSTRATION SITE</a></li>
