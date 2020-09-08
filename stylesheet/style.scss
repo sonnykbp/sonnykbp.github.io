@@ -290,6 +290,7 @@ h5 {
   background: white;
   margin-top: 30px;
   margin-bottom: 30px;
+  min-height: 540px;
 }
 
 .project-img {
@@ -297,10 +298,10 @@ h5 {
 }
 
 .project-description {
-  margin: 20px;
-  margin-top: 0px;
-  margin-bottom: 100px;
-  width: 350px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    width: 350px;
 }
 
 .project-img img {
@@ -497,4 +498,9 @@ h5 {
       margin: 0;
     }
   }
+}
+
+.project--btns-wrapper {
+  margin-top: 30px;
+  display: flex;
 }

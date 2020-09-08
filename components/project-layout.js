@@ -31,8 +31,7 @@ const ProjectLayout = ({workType, projectData}) => {
                 <p>{description}</p>
                 <br/>
                 <p><em>({tools})</em></p>
-                <br/>
-                <div>
+                <div className="project--btns-wrapper">
                     <a href={link} target="_blank">{CTA}</a>
                     {code_src ? <a href={code_src} target="_blank">Source Code</a> : '' }
                 </div>
@@ -42,11 +41,6 @@ const ProjectLayout = ({workType, projectData}) => {
         })}
 
     </section>
-    <style jsx>{`
-      .project-description div {
-        margin-top: 30px;
-      }
-    `}</style>
     </>
     )
 }

@@ -211,21 +211,20 @@ const HomePage = ({href}) => {
         </ul>
       </div>
 
-      <div className="online-profile">
-        <h4>PROFILES</h4>
-        <ul>
-          <li><a href="https://profiles.generalassemb.ly/sonny-keobounphanh" target="_blank">GENERAL ASSEMBLY</a></li>
-          <li><a href="http://www.sonnykeobounphanh.com/" target="_blank">ILLUSTRATION SITE</a></li>
-        </ul>
-      </div>
-
-
       <div className="resume-links">
         <h4>RESUME</h4>
         <ul>
           <li><a href="https://drive.google.com/file/d/1jEBa-MrGu_tj1NoTdz09OG8WJMGvFW41/view?usp=sharing" target="_blank">RESUME</a></li>
         </ul>
       </div>
+
+      <div className="online-profile">
+        <h4>PROFILES</h4>
+        <ul>
+          <li><a href="http://www.sonnykeobounphanh.com/" target="_blank">ILLUSTRATION SITE</a></li>
+        </ul>
+      </div>
+
     </section>
 
   </section>
