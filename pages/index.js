@@ -164,15 +164,14 @@ const HomePage = ({href}) => {
 
 
   <section className="work" id="work" ref={(ref) => myRef.current[1] = ref}>
-    <div className="brand">
+      <div className="ux-ui">
       <p className="work-order">01</p>
+      <h3><Link href="/web-app"><a>WEB<br/> APPLICATION</a></Link></h3>
+    </div>
+    <div className="brand">
+      <p className="work-order">02</p>
 
       <h3><Link href="/design"><a>WEB<br/> DESIGN</a></Link></h3>
-    </div>
-
-    <div className="ux-ui">
-      <p className="work-order">02</p>
-      <h3><Link href="/web-app"><a>WEB<br/> APPLICATION</a></Link></h3>
     </div>
 
     <div className="motion">

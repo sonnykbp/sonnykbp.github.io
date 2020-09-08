@@ -8,8 +8,8 @@ const ProjectLayout = ({workType, projectData}) => {
     <Header />
     <section className="breadcrumbs">
       <ul>
-        <li><Link href="/design"><a>Web Design</a></Link>  &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
         <li><Link href="/web-app"><a>Web Application</a></Link>    &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
+        <li><Link href="/design"><a>Web Design</a></Link>  &nbsp;&nbsp;/&nbsp;&nbsp;  </li>
         <li><Link href="/motion"><a>Motion Graphics</a></Link> </li>
       </ul>
     </section>
