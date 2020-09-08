@@ -193,6 +193,16 @@ h3:hover {
   transition: all 0.5s ease;
 }
 
+.work {
+  div {
+   flex-basis: 26.5vw;
+    width: unset;
+  }
+    h3 {
+      font-size: 2.25em;
+    }
+}
+
 .brand:hover, .ux-ui:hover, .motion:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -214,6 +224,7 @@ h3:hover {
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
+    max-width: 85%;
     li {
     background: #708090;
     padding: 0.5em 0.75em;
@@ -253,6 +264,10 @@ h4 {
 .online-profile, .resume-links {
   width: 250px;
   margin-right: 50px;
+}
+
+.online-profile {
+  width: 220px;
 }
 
 .email {
@@ -366,7 +381,7 @@ h5 {
 
 /*MOBILE STYLE*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   html {
     margin: 0;
   }
@@ -439,9 +454,13 @@ h5 {
 
   .work {
     flex-wrap: wrap;
-
-    /*text-align: center;
-    border: none;*/
+    div {
+      flex-basis: 80vw;
+      max-width: 80vw;
+    }
+    h3 {
+      font-size: 3em;
+    }
   }
 
   .contact-description {
