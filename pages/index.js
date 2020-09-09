@@ -44,7 +44,7 @@ const HomePage = ({href}) => {
 
 
     <div className="slider">
-      <h3 className="caption"><a href="#">&#60;&nbsp;DESIGN /&#62;</a></h3>
+      <h3 className="caption"><a>&#60;&nbsp;DESIGN /&#62;</a></h3>
     </div>
 
 
